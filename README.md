@@ -1,9 +1,5 @@
-# React TypeScript Starter Pack
+Frontend project for an online store of phones and tablets, featuring a homepage, product catalog, shopping cart, category filtering, and favorites selection.
+Built using React, TypeScript, HTML, SCSS (preprocessor), React Router, UseContext, and a custom useLocalStorage hook.
+Data is dynamically loaded from the server via fetch.
 
-To use this template click `Use this template`
-
-### Available Scripts
-
-`Deploy` - available to deploy your application to gh-pages
-
-`SCSS Preprocessor` - available to write your styles with modern style language
+- [DEMO LINK](https://msdreams.github.io/phone_catalog/)
