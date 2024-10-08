@@ -15,6 +15,9 @@ export const CartPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  const totalItems = cartProducts.reduce((acc, item) => {
+    return acc + item.count;
+  }, 0);
 
   const totalCartPrice = cartProducts.reduce((acc, item) => {
     const itemTotal = item.price * item.count;
@@ -52,9 +55,9 @@ export const CartPage = () => {
                   <div>
                     <h2 className="cartPage__tottal-price">{`$${totalCartPrice}`}</h2>
                     <p className="cartPage__tottal-items">
-                      {cartItems.length > 0
-                        ? `Total for ${cartItems.length} item`
-                        : `Total for ${cartItems.length} items`}
+                      {cartProducts.length && totalItems < 2
+                        ? `Total for ${totalItems} item`
+                        : `Total for ${totalItems} items`}
                     </p>
                   </div>
                   <div className="cartPage__tottal-line" />
