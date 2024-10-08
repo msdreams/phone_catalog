@@ -20,6 +20,19 @@ This project is built with:
 - UseContext: For managing global state.
 - Custom useLocalStorage Hook: For storing user preferences locally.
 
+How to Run the Project Locally
+
+Prerequisites:
+- Node.js 14.x.x (use nvm for version management)
+
+Steps: 
+1. Clone the repo: git clone https://github.com/msdreams/phone_catalog.git && cd phone_catalog
+2. Switch to Node 14: nvm install 14 && nvm use 14 
+3. Install dependencies: npm install 
+4. Run the project: npm start (App runs at http://localhost:3000) 
+5. Build for production (optional): npm run build
+You can copy and paste this directly into your README file!
+
 Data is dynamically loaded from the server via fetch.
 - [Figma](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
 - [DEMO LINK](https://msdreams.github.io/phone_catalog/)
